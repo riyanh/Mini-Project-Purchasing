@@ -9,7 +9,6 @@ namespace Purchasing.Entities.Models
     {
         public UnitMeasure()
         {
-            BillOfMaterials = new HashSet<BillOfMaterial>();
             ProductSizeUnitMeasureCodeNavigations = new HashSet<Product>();
             ProductVendors = new HashSet<ProductVendor>();
             ProductWeightUnitMeasureCodeNavigations = new HashSet<Product>();
@@ -19,7 +18,6 @@ namespace Purchasing.Entities.Models
         public string Name { get; set; }
         public DateTime ModifiedDate { get; set; }
 
-        public virtual ICollection<BillOfMaterial> BillOfMaterials { get; set; }
         public virtual ICollection<Product> ProductSizeUnitMeasureCodeNavigations { get; set; }
         public virtual ICollection<ProductVendor> ProductVendors { get; set; }
         public virtual ICollection<Product> ProductWeightUnitMeasureCodeNavigations { get; set; }

@@ -7,11 +7,11 @@ namespace Purchasing.Entities.Models
 {
     public partial class PurchaseOrderDetail
     {
-        public int PurchaseOrderId { get; set; }
-        public int PurchaseOrderDetailId { get; set; }
+        public int PurchaseOrderID { get; set; }
+        public int PurchaseOrderDetailID { get; set; }
         public DateTime DueDate { get; set; }
         public short OrderQty { get; set; }
-        public int ProductId { get; set; }
+        public int ProductID { get; set; }
         public decimal UnitPrice { get; set; }
         public decimal LineTotal { get; set; }
         public decimal ReceivedQty { get; set; }

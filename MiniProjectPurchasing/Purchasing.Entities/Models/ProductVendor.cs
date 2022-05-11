@@ -7,8 +7,8 @@ namespace Purchasing.Entities.Models
 {
     public partial class ProductVendor
     {
-        public int ProductId { get; set; }
-        public int BusinessEntityId { get; set; }
+        public int ProductID { get; set; }
+        public int BusinessEntityID { get; set; }
         public int AverageLeadTime { get; set; }
         public decimal StandardPrice { get; set; }
         public decimal? LastReceiptCost { get; set; }

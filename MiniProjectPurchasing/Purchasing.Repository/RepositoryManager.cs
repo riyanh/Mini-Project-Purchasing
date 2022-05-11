@@ -32,8 +32,7 @@ namespace Purchasing.Repository
             }
         }
 
-
         public async Task SaveAsync() =>
-          await _repositoryContext.SaveChangesAsync();
+            await _repositoryContext.SaveChangesAsync();
     }
 }

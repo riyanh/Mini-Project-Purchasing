@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace Purchasing.Entities.Models
 {
-    public partial class VVendorWithContact
+    public partial class vVendorWithContact
     {
-        public int BusinessEntityId { get; set; }
+        public int BusinessEntityID { get; set; }
         public string Name { get; set; }
         public string ContactType { get; set; }
         public string Title { get; set; }

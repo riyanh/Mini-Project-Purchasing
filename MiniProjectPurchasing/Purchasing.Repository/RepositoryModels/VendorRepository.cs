@@ -17,7 +17,7 @@ namespace Purchasing.Repository.RepositoryModels
         }
 
         public async Task<IEnumerable<Vendor>> GetAllVendoryAsync(bool trackChanges) =>
-            await FindAll(trackChanges).OrderBy(v => v.BusinessEntityId).ToListAsync();
+            await FindAll(trackChanges).OrderBy(v => v.BusinessEntityID).ToListAsync();
 
         public Task<Vendor> GetVendorAsync(int id, bool trackChanges)
         {
