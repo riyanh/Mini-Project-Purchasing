@@ -1,0 +1,17 @@
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purcashing.LoggerService.deps.json
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purcashing.LoggerService.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purcashing.LoggerService.pdb
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Contracts.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Contracts.pdb
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.AssemblyReference.cache
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.AssemblyInfoInputs.cache
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.AssemblyInfo.cs
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.CoreCompileInputs.cache
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.CopyComplete
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\refint\Purcashing.LoggerService.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.pdb
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\ref\Purcashing.LoggerService.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Entities.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Entities.pdb

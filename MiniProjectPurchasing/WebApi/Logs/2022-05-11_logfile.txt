@@ -1,0 +1,23 @@
+2022-05-11 17:01:04.5168 ERROR GetVendor message : System.InvalidOperationException: The LINQ expression 'DbSet<Vendor>()
+    .OrderBy(v => MaterializeCollectionNavigation(
+        Navigation: Vendor.ProductVendors,
+        subquery: DbSet<ProductVendor>()
+            .Where(p => EF.Property<Nullable<int>>(v, "BusinessEntityId") != null && object.Equals(
+                objA: (object)EF.Property<Nullable<int>>(v, "BusinessEntityId"), 
+                objB: (object)EF.Property<Nullable<int>>(p, "BusinessEntityId"))))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|15_0(ShapedQueryExpression translated, <>c__DisplayClass15_0& )
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Purchasing.Repository.RepositoryModels.VendorRepository.GetAllVendoryAsync(Boolean trackChanges) in D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\RepositoryModels\VendorRepository.cs:line 20
+   at Purchasing.WebAPI.Controllers.VendorController.GetVendor() in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\VendorController.cs:line 32

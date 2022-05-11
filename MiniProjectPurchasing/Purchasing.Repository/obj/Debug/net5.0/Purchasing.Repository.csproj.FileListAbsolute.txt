@@ -1,0 +1,17 @@
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Repository.deps.json
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Repository.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Repository.pdb
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Contracts.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Entities.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Contracts.pdb
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Entities.pdb
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.csproj.AssemblyReference.cache
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.AssemblyInfoInputs.cache
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.AssemblyInfo.cs
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.csproj.CoreCompileInputs.cache
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.csproj.CopyComplete
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\refint\Purchasing.Repository.dll
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.pdb
+D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\ref\Purchasing.Repository.dll
