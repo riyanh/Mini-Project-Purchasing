@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Purchasing.Entities.Models;
+using Purchasing.Entities.RequesFeatures;
 
 namespace Purchasing.Contracts.Interfaces
 {
@@ -12,5 +13,7 @@ namespace Purchasing.Contracts.Interfaces
         Task<IEnumerable<Vendor>> GetAllVendoryAsync(bool trackChanges);
 
         Task<Vendor> GetVendorAsync(int id, bool trackChanges);
+
+        Task<IEnumerable<Vendor>> GetPaginationCategoryAsync(VendorParameters vendorParameters, bool trackChanges);
     }
 }
