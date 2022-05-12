@@ -14,6 +14,8 @@ namespace Purchasing.Contracts.Interfaces
 
         Task<Vendor> GetVendorAsync(int id, bool trackChanges);
 
-        Task<IEnumerable<Vendor>> GetPaginationCategoryAsync(VendorParameters vendorParameters, bool trackChanges);
+        Task<IEnumerable<Vendor>> GetPaginationVendorAsync(VendorParameters vendorParameters, bool trackChanges);
+
+        Task<IEnumerable<Vendor>> GetSearchVendorAsync(VendorParameters vendorParameters, bool trackChanges);
     }
 }

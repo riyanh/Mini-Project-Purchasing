@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Purchasing.Entities.DTO;
 using System;
+using Purchasing.Entities.RequesFeatures;
 
 namespace Purchasing.WebAPI.Controllers
 {
@@ -42,6 +43,22 @@ namespace Purchasing.WebAPI.Controllers
                 return StatusCode(500, "Internal Server Error");
             }
         }//EndMethodGetVendor
+
+        [HttpGet("pagination")]
+        public async Task<IActionResult> GetVendorPagination([FromQuery] VendorParameters vendorParameters)
+        {
+            var vendorPage = await _repository.Vendor.GetPaginationVendorAsync(vendorParameters, trackChanges: false);
+            var vendorDto = _mapper.Map<IEnumerable<VendorDto>>(vendorPage);
+            return Ok(vendorDto);
+        }//endMethodPagination
+
+        [HttpGet("search")]
+        public async Task<IActionResult> GetVendorSearch([FromQuery] VendorParameters vendorParameters)
+        {
+            var vendorSearch = await _repository.Vendor.GetSearchVendorAsync(vendorParameters, trackChanges: false);
+            var vendorDto = _mapper.Map<IEnumerable<VendorDto>>(vendorSearch);
+            return Ok(vendorDto);
+        }//endMethodSearch
 
     }//endClassVendor
 }
