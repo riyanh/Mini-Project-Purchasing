@@ -28,15 +28,17 @@ namespace Purchasing.Entities.RepositoryContexts
         public virtual DbSet<Vendor> Vendors { get; set; }
         public virtual DbSet<vVendorWithAddress> vVendorWithAddresses { get; set; }
         public virtual DbSet<vVendorWithContact> vVendorWithContacts { get; set; }
+        public virtual DbSet<VListVendor> VListVendors { get; set; }
 
-      /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-0GRTEHQ\\SQLEXPRESS;Initial Catalog=AdventureWorks2019;Trusted_Connection=True");
-            }
-        }*/
+
+        /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+          {
+              if (!optionsBuilder.IsConfigured)
+              {
+  #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                  optionsBuilder.UseSqlServer("Data Source=DESKTOP-0GRTEHQ\\SQLEXPRESS;Initial Catalog=AdventureWorks2019;Trusted_Connection=True");
+              }
+          }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -578,6 +580,21 @@ namespace Purchasing.Entities.RepositoryContexts
                 entity.Property(e => e.Suffix).HasMaxLength(10);
 
                 entity.Property(e => e.Title).HasMaxLength(8);
+            });
+
+            modelBuilder.Entity<VListVendor>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("VListVendor");
+
+                entity.Property(e => e.AccountNumber)
+                    .IsRequired()
+                    .HasMaxLength(15);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50);
             });
 
             OnModelCreatingPartial(modelBuilder);

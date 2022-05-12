@@ -10,12 +10,12 @@ namespace Purchasing.Contracts.Interfaces
 {
     public interface IVendorRepository
     {
-        Task<IEnumerable<Vendor>> GetAllVendoryAsync(bool trackChanges);
+        Task<IEnumerable<VListVendor>> GetAllVendoryAsync(bool trackChanges);
 
-        Task<Vendor> GetVendorAsync(int id, bool trackChanges);
+        Task<VListVendor> GetVendorAsync(int id, bool trackChanges);
 
-        Task<IEnumerable<Vendor>> GetPaginationVendorAsync(VendorParameters vendorParameters, bool trackChanges);
+        Task<IEnumerable<VListVendor>> GetPaginationVendorAsync(VendorParameters vendorParameters, bool trackChanges);
 
-        Task<IEnumerable<Vendor>> GetSearchVendorAsync(VendorParameters vendorParameters, bool trackChanges);
+        Task<IEnumerable<VListVendor>> GetSearchVendorAsync(VendorParameters vendorParameters, bool trackChanges);
     }
 }
