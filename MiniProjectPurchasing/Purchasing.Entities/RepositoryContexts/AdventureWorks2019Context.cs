@@ -29,6 +29,7 @@ namespace Purchasing.Entities.RepositoryContexts
         public virtual DbSet<vVendorWithAddress> vVendorWithAddresses { get; set; }
         public virtual DbSet<vVendorWithContact> vVendorWithContacts { get; set; }
         public virtual DbSet<VListVendor> VListVendors { get; set; }
+        public virtual DbSet<VProductReceipt> VProductReceipts { get; set; }
 
 
         /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -595,6 +596,32 @@ namespace Purchasing.Entities.RepositoryContexts
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<VProductReceipt>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("VProductReceipt");
+
+                entity.Property(e => e.AccountNumber)
+                    .IsRequired()
+                    .HasMaxLength(15);
+
+                entity.Property(e => e.LastReceiptCost).HasColumnType("money");
+
+                entity.Property(e => e.LastReceiptDate).HasColumnType("datetime");
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.StandardPrice).HasColumnType("money");
+
+                entity.Property(e => e.UnitMeasureCode)
+                    .IsRequired()
+                    .HasMaxLength(3)
+                    .IsFixedLength(true);
             });
 
             OnModelCreatingPartial(modelBuilder);

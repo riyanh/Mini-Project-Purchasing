@@ -35,7 +35,6 @@ namespace Purchasing.WebAPI.Controllers
                 var vendorsDto = _mapper.Map<IEnumerable<VendorDto>>(vendors);
 
                 return Ok(vendorsDto);
-                return Ok();
             }
             catch (Exception ex)
             {

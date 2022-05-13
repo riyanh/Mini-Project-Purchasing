@@ -10,9 +10,11 @@ namespace Purchasing.WebAPI.Mapping
         {
             //get 
             CreateMap<VListVendor, VendorDto>();
+            CreateMap<VProductReceipt, ProductReceiptDto>();
 
             //post 
             CreateMap<VendorDto, VListVendor>().ReverseMap();
+            //CreateMap<ProductReceiptDto, VProductReceipt>().ReverseMap();
         }
     }
 }
