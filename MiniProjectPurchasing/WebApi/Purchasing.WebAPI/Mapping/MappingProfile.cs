@@ -9,10 +9,10 @@ namespace Purchasing.WebAPI.Mapping
         public MappingProfile()
         {
             //get 
-            CreateMap<Vendor, VendorDto>();
+            CreateMap<VListVendor, VendorDto>();
 
             //post 
-            CreateMap<VendorDto, Vendor>().ReverseMap();
+            CreateMap<VendorDto, VListVendor>().ReverseMap();
         }
     }
 }

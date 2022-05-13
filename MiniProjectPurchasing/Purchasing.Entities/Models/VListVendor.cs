@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Purchasing.Entities.DTO
+#nullable disable
+
+namespace Purchasing.Entities.Models
 {
-    public class VendorDto
+    public partial class VListVendor
     {
         public string AccountNumber { get; set; }
         public string Name { get; set; }
