@@ -14,6 +14,8 @@ namespace Purchasing.Repository
     {
         private AdventureWorks2019Context _repositoryContext;
         private IVendorRepository _vendorRepository;
+        private IProductVendorRepository _productVendorRepository;
+        private IListOrderRepository _listOrderRepository;
 
         public RepositoryManager(AdventureWorks2019Context repositoryContext)
         {
@@ -29,6 +31,29 @@ namespace Purchasing.Repository
                     _vendorRepository = new VendorRepository(_repositoryContext);
                 }
                 return _vendorRepository;
+            }
+        }
+
+        public IProductVendorRepository ProductVendor
+        {
+            get
+            {
+                if (_productVendorRepository == null)
+                {
+                    _productVendorRepository = new ProductVendorRepository(_repositoryContext);
+                }
+                return _productVendorRepository;
+            }
+        }
+        public IListOrderRepository ListOrder
+        {
+            get
+            {
+                if (_listOrderRepository == null)
+                {
+                    _listOrderRepository = new ListOrderRepository(_repositoryContext);
+                }
+                return _listOrderRepository;
             }
         }
 

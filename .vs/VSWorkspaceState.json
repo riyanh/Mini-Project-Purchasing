@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MiniProjectPurchasing",
+    "\\MiniProjectPurchasing\\Purchasing.Entities",
+    "\\MiniProjectPurchasing\\Purchasing.Entities\\RepositoryContexts",
+    "\\MiniProjectPurchasing\\WebApi",
+    "\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI",
+    "\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Controllers",
+    "\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Extensions",
+    "\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Mapping",
+    "\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\obj"
+  ],
+  "SelectedNode": "\\MiniProjectPurchasing\\MiniProjectPurchasing.sln",
+  "PreviewInSolutionExplorer": false
+}

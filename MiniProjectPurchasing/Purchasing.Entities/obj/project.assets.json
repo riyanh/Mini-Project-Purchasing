@@ -5798,19 +5798,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Vina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MiniProjectC#\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
       "projectName": "Purchasing.Entities",
-      "projectPath": "D:\\MiniProjectC#\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\MiniProjectC#\\MiniProjectPurchasing\\Purchasing.Entities\\obj\\",
+      "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
+      "packagesPath": "C:\\Users\\Vina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

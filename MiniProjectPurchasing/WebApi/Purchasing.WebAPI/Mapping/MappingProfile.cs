@@ -13,6 +13,15 @@ namespace Purchasing.WebAPI.Mapping
 
             //post 
             CreateMap<VendorDto, Vendor>().ReverseMap();
+
+            CreateMap<ProductVendor, ProductVendorDto>();
+
+            //post 
+            CreateMap<ProductVendorDto, ProductVendor>().ReverseMap();
+            CreateMap<PurchaseOrderHeader, PurchaseOrderHeaderDto>();
+
+            //post 
+            CreateMap<PurchaseOrderHeaderDto, PurchaseOrderHeader>().ReverseMap();
         }
     }
 }

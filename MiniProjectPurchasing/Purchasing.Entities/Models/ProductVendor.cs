@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Purchasing.Entities.RepositoryContexts;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
@@ -7,6 +8,7 @@ namespace Purchasing.Entities.Models
 {
     public partial class ProductVendor
     {
+
         public int ProductID { get; set; }
         public int BusinessEntityID { get; set; }
         public int AverageLeadTime { get; set; }

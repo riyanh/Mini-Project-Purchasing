@@ -11,6 +11,8 @@ namespace Purchasing.Contracts
     {
         //Modul-modul Crud
         IVendorRepository Vendor { get; }
+        IProductVendorRepository ProductVendor { get; }
+        IListOrderRepository ListOrder { get; }
 
         Task SaveAsync();
     }
