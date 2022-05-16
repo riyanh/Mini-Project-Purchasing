@@ -35,13 +35,30 @@ namespace Purchasing.Repository.RepositoryModels
                 return await FindAll(trackChanges).ToListAsync();
             }
             var lowerCaseSearch = vendorParameters.SearchVendor.Trim().ToLower();
-            return await FindAll(trackChanges)
+            var setOrderby = vendorParameters.OrderBy.Trim().ToLower();
+            if(setOrderby == "accountnumber")
+            {
+                return await FindAll(trackChanges)
                 //.Where(v => v.AccountNumber.ToLower().Contains(lowerCaseSearch))
                 .Where(v => v.AccountNumber.ToLower().Contains(lowerCaseSearch) || v.Name.ToLower().Contains(lowerCaseSearch))
+                //.OrderBy(v => v.Name.Contains(setOrderby) || v.AccountNumber.Contains(setOrderby))
+                .OrderBy(v => v.AccountNumber)
+                .Skip((vendorParameters.PageNumber - 1) * vendorParameters.PageSize)
+                .Take(vendorParameters.PageSize)
+                .ToListAsync();
+            }
+            else 
+            {
+                return await FindAll(trackChanges)
+                //.Where(v => v.AccountNumber.ToLower().Contains(lowerCaseSearch))
+                .Where(v => v.AccountNumber.ToLower().Contains(lowerCaseSearch) || v.Name.ToLower().Contains(lowerCaseSearch))
+                //.OrderBy(v => v.Name.Contains(setOrderby) || v.AccountNumber.Contains(setOrderby))
                 .OrderBy(v => v.Name)
                 .Skip((vendorParameters.PageNumber - 1) * vendorParameters.PageSize)
                 .Take(vendorParameters.PageSize)
                 .ToListAsync();
+            }
+            
         }
 
         public Task<VListVendor> GetVendorAsync(int id, bool trackChanges)
@@ -49,36 +66,5 @@ namespace Purchasing.Repository.RepositoryModels
             throw new NotImplementedException();
         }
 
-        /* public async Task<IEnumerable<Vendor>> GetAllVendoryAsync(bool trackChanges) =>
-             await FindAll(trackChanges).OrderBy(v => v.BusinessEntityID).ToListAsync();
-
-         public Task<Vendor> GetVendorAsync(int id, bool trackChanges)
-         {
-             throw new NotImplementedException();
-         }*/
-
-        /* public async Task<IEnumerable<Vendor>> GetPaginationVendorAsync(VendorParameters vendorParameters, bool trackChanges)
-         {
-             return await FindAll(trackChanges)
-                 .Skip((vendorParameters.PageNumber - 1) * vendorParameters.PageSize)
-                 .Take(vendorParameters.PageSize)
-                 .ToListAsync();
-         }*/
-
-        /* public async Task<IEnumerable<Vendor>> GetSearchVendorAsync(VendorParameters vendorParameters, bool trackChanges)
-         {
-             if (string.IsNullOrWhiteSpace(vendorParameters.SearchVendor))
-             {
-                 return await FindAll(trackChanges).ToListAsync();
-             }
-             var lowerCaseSearch = vendorParameters.SearchVendor.Trim().ToLower();
-             return await FindAll(trackChanges)
-                 //.Where(v => v.AccountNumber.ToLower().Contains(lowerCaseSearch))
-                 .Where(v => v.AccountNumber.ToLower().Contains(lowerCaseSearch) || v.Name.ToLower().Contains(lowerCaseSearch))
-                 .OrderBy(v => v.Name)
-                 .Skip((vendorParameters.PageNumber - 1) * vendorParameters.PageSize)
-                 .Take(vendorParameters.PageSize)
-                 .ToListAsync();
-         }*/
     }
 }

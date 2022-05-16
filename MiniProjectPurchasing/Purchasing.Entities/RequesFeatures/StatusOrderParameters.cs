@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Purchasing.Entities.RequesFeatures
 {
-    public class VendorParameters : RequestParameters
+    public class StatusOrderParameters : RequestParameters
     {
-        public string SearchVendor { get; set; }
-        
+        public string SearchStatusVendor { get; set; }
     }
 }

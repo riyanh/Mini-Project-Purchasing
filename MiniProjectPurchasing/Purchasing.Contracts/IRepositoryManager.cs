@@ -12,6 +12,9 @@ namespace Purchasing.Contracts
         //Modul-modul Crud
         IVendorRepository Vendor { get; }
         IProductReceiptRepository ProductReceipt { get; }
+        IApprovedVendorRepository ApprovedVendor { get; }
+        IStatusOrderRepository StatusOrder { get; }
+        ITotalDueMonth TotalDueMonth { get; }
 
         Task SaveAsync();
     }

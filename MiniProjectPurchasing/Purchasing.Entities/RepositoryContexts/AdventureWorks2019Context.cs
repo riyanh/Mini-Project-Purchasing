@@ -30,6 +30,9 @@ namespace Purchasing.Entities.RepositoryContexts
         public virtual DbSet<vVendorWithContact> vVendorWithContacts { get; set; }
         public virtual DbSet<VListVendor> VListVendors { get; set; }
         public virtual DbSet<VProductReceipt> VProductReceipts { get; set; }
+        public virtual DbSet<VApprovedVendor> VApprovedVendors { get; set; }
+        public virtual DbSet<VStatusTotalOrder> VStatusTotalOrders { get; set; }
+        public virtual DbSet<VTotalDueMonth> VTotalDueMonths { get; set; }
 
 
         /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -44,6 +47,47 @@ namespace Purchasing.Entities.RepositoryContexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+
+            modelBuilder.Entity<VTotalDueMonth>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("VTotalDueMonth");
+
+                entity.Property(e => e.Months)
+                    .IsRequired()
+                    .HasMaxLength(9)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.TotalDue).HasColumnType("money");
+            });
+
+            modelBuilder.Entity<VApprovedVendor>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("VApprovedVendor");
+
+                entity.Property(e => e.Vendor)
+                    .IsRequired()
+                    .HasMaxLength(15);
+            });
+
+            modelBuilder.Entity<VStatusTotalOrder>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("VStatusTotalOrder");
+
+                entity.Property(e => e.AccountNumber)
+                    .IsRequired()
+                    .HasMaxLength(15);
+
+                entity.Property(e => e.StatusVendor)
+                    .IsRequired()
+                    .HasMaxLength(9)
+                    .IsUnicode(false);
+            });
 
             modelBuilder.Entity<BusinessEntity>(entity =>
             {

@@ -1,0 +1,75 @@
+2022-05-16 00:03:44.9816 ERROR GetApprovedVendor message : AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Purchasing.Entities.Models.VApprovedVendor, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Purchasing.Entities.DTO.ApprovedVendorDto, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+VApprovedVendor -> ApprovedVendorDto
+Purchasing.Entities.Models.VApprovedVendor -> Purchasing.Entities.DTO.ApprovedVendorDto
+   at lambda_method27(Closure , VApprovedVendor , ApprovedVendorDto , ResolutionContext )
+   at lambda_method26(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method26(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.DashboardController.GetApprovedVendor() in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\DashboardController.cs:line 34
+2022-05-16 00:43:05.1075 ERROR GetApprovedVendor message : AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Purchasing.Entities.Models.VStatusTotalOrder, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Purchasing.Entities.DTO.ApprovedVendorDto, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+VStatusTotalOrder -> ApprovedVendorDto
+Purchasing.Entities.Models.VStatusTotalOrder -> Purchasing.Entities.DTO.ApprovedVendorDto
+   at lambda_method28(Closure , VStatusTotalOrder , ApprovedVendorDto , ResolutionContext )
+   at lambda_method27(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method27(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.DashboardController.GetStatusOrder() in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\DashboardController.cs:line 52
+2022-05-16 00:45:25.0282 ERROR GetApprovedVendor message : AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Purchasing.Entities.Models.VStatusTotalOrder, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Purchasing.Entities.DTO.ApprovedVendorDto, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+VStatusTotalOrder -> ApprovedVendorDto
+Purchasing.Entities.Models.VStatusTotalOrder -> Purchasing.Entities.DTO.ApprovedVendorDto
+   at lambda_method28(Closure , VStatusTotalOrder , ApprovedVendorDto , ResolutionContext )
+   at lambda_method27(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method27(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.DashboardController.GetStatusOrder() in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\DashboardController.cs:line 52
+2022-05-16 06:08:26.1135 ERROR GetStatusOrder message : AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Purchasing.Entities.Models.VStatusTotalOrder, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Purchasing.Entities.DTO.ApprovedVendorDto, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+VStatusTotalOrder -> ApprovedVendorDto
+Purchasing.Entities.Models.VStatusTotalOrder -> Purchasing.Entities.DTO.ApprovedVendorDto
+   at lambda_method28(Closure , VStatusTotalOrder , ApprovedVendorDto , ResolutionContext )
+   at lambda_method27(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method27(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.DashboardController.GetStatusOrder() in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\DashboardController.cs:line 52
+2022-05-16 19:13:55.7176 ERROR GetTotalDueMonth message : AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Purchasing.Entities.Models.VTotalDueMonth, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Purchasing.Entities.DTO.TotalDueMonthDto, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+VTotalDueMonth -> TotalDueMonthDto
+Purchasing.Entities.Models.VTotalDueMonth -> Purchasing.Entities.DTO.TotalDueMonthDto
+   at lambda_method29(Closure , VTotalDueMonth , TotalDueMonthDto , ResolutionContext )
+   at lambda_method28(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method28(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.DashboardController.GetTotalDueMonth() in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\DashboardController.cs:line 61

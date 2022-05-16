@@ -15,6 +15,9 @@ namespace Purchasing.Repository
         private AdventureWorks2019Context _repositoryContext;
         private IVendorRepository _vendorRepository;
         private IProductReceiptRepository _productReceiptRepository;
+        private IApprovedVendorRepository _approvedVendorRepository;
+        private IStatusOrderRepository _statusOrderRepository;
+        private ITotalDueMonth _totalDueMonth;
 
         public RepositoryManager(AdventureWorks2019Context repositoryContext)
         {
@@ -42,6 +45,42 @@ namespace Purchasing.Repository
                     _productReceiptRepository = new ProductReceiptRepository(_repositoryContext);
                 }
                 return _productReceiptRepository;
+            }
+        }
+
+        public IApprovedVendorRepository ApprovedVendor
+        {
+            get
+            {
+                if (_approvedVendorRepository == null)
+                {
+                    _approvedVendorRepository = new ApprovedVendorRepository(_repositoryContext);
+                }
+                return _approvedVendorRepository;
+            }
+        }
+
+        public IStatusOrderRepository StatusOrder
+        {
+            get
+            {
+                if (_statusOrderRepository == null)
+                {
+                    _statusOrderRepository = new StatusOrderRepository(_repositoryContext);
+                }
+                return _statusOrderRepository;
+            }
+        }
+
+        public ITotalDueMonth TotalDueMonth
+        {
+            get
+            {
+                if (_totalDueMonth == null)
+                {
+                    _totalDueMonth = new TotalDueMonthRepository(_repositoryContext);
+                }
+                return _totalDueMonth;
             }
         }
 
