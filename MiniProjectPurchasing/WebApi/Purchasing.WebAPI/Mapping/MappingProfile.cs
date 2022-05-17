@@ -14,6 +14,8 @@ namespace Purchasing.WebAPI.Mapping
             CreateMap<VApprovedVendor, ApprovedVendorDto>();
             CreateMap<VStatusTotalOrder, StatusOrderDto>();
             CreateMap<VTotalDueMonth, TotalDueMonthDto>();
+            CreateMap<VCartItem, ListCartItemDto>();
+            CreateMap<VPurchaseOrder, PurchaseOrderDto>();
 
             //post 
             CreateMap<VendorDto, VListVendor>().ReverseMap();

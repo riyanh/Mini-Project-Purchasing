@@ -33,6 +33,8 @@ namespace Purchasing.Entities.RepositoryContexts
         public virtual DbSet<VApprovedVendor> VApprovedVendors { get; set; }
         public virtual DbSet<VStatusTotalOrder> VStatusTotalOrders { get; set; }
         public virtual DbSet<VTotalDueMonth> VTotalDueMonths { get; set; }
+        public virtual DbSet<VCartItem> VCartItems { get; set; }
+        public virtual DbSet<VPurchaseOrder> VPurchaseOrders { get; set; }
 
 
         /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -47,6 +49,49 @@ namespace Purchasing.Entities.RepositoryContexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+
+            modelBuilder.Entity<VPurchaseOrder>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("VPurchaseOrder");
+
+                entity.Property(e => e.AccountNumber)
+                    .IsRequired()
+                    .HasMaxLength(15);
+
+                entity.Property(e => e.UnitMeasureCode)
+                    .IsRequired()
+                    .HasMaxLength(3)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.UnitPrice).HasColumnType("money");
+
+                entity.Property(e => e.product)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.vendor)
+                    .IsRequired()
+                    .HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<VCartItem>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("VCartItem");
+
+                entity.Property(e => e.AccountNumber)
+                    .IsRequired()
+                    .HasMaxLength(15);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.OrderDate).HasColumnType("datetime");
+            });
 
             modelBuilder.Entity<VTotalDueMonth>(entity =>
             {

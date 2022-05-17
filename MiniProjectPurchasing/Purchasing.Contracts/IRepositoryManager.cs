@@ -15,6 +15,8 @@ namespace Purchasing.Contracts
         IApprovedVendorRepository ApprovedVendor { get; }
         IStatusOrderRepository StatusOrder { get; }
         ITotalDueMonth TotalDueMonth { get; }
+        IListCartItemRepository ListCartItem { get; }
+        IPurchaseOrderRepository PurchaseOrder { get; }
 
         Task SaveAsync();
     }
