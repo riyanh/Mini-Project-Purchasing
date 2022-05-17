@@ -28,6 +28,7 @@ namespace Purchasing.Entities.RepositoryContexts
         public virtual DbSet<Vendor> Vendors { get; set; }
         public virtual DbSet<vVendorWithAddress> vVendorWithAddresses { get; set; }
         public virtual DbSet<vVendorWithContact> vVendorWithContacts { get; set; }
+        public virtual DbSet<vNewEditVendor> VNewEditVendors { get; set; }
 
       /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -578,6 +579,11 @@ namespace Purchasing.Entities.RepositoryContexts
                 entity.Property(e => e.Suffix).HasMaxLength(10);
 
                 entity.Property(e => e.Title).HasMaxLength(8);
+            });
+
+            modelBuilder.Entity<vNewEditVendor>(entity =>
+            {
+
             });
 
             OnModelCreatingPartial(modelBuilder);
