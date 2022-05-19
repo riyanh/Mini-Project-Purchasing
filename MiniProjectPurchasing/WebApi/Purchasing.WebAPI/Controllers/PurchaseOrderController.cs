@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Purchasing.Contracts;
 using Purchasing.Entities.DTO;
+using Purchasing.Entities.Models;
 using Purchasing.Entities.RequesFeatures;
 using System;
 using System.Collections.Generic;
@@ -17,12 +18,14 @@ namespace Purchasing.WebAPI.Controllers
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
+        private readonly IPurchaseOrderService _service;
 
-        public PurchaseOrderController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        public PurchaseOrderController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, IPurchaseOrderService service)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
+            _service = service;
         }
 
         [HttpGet("listProduct")]
@@ -50,6 +53,27 @@ namespace Purchasing.WebAPI.Controllers
             var purchaseOrderDto = _mapper.Map<IEnumerable<PurchaseOrderDto>>(purchaseOrderSearch);
             return Ok(purchaseOrderDto);
         }//endMethodSearch
+
+        [HttpPost("AddToChart")]
+        public async Task<IActionResult> AddToCart([FromBody] PurchaseOrderDetailDto purchaseOrderDetailDto)
+        {
+            try
+            {
+                if(purchaseOrderDetailDto == null)
+                {
+                    _logger.LogError("Purchase Order Detail to add purchase fail");
+                    BadRequest("Purchase Order Detail Object add purchase fail");
+                }
+                  var cartEntity = await _service.AddToCart(purchaseOrderDetailDto.PurchaseOrderID, purchaseOrderDetailDto.ProductID);
+                return Ok(_mapper.Map<PurchaseOrderDetailDto>(cartEntity));
+                //return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{nameof(AddToCart)} message : {ex}");
+                return StatusCode(500, $"Error {ex}");
+            }
+        }
 
     }
 }

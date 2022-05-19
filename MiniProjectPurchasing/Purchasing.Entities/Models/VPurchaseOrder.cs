@@ -7,6 +7,7 @@ namespace Purchasing.Entities.Models
 {
     public partial class VPurchaseOrder
     {
+        public int PurchaseOrderID { get; set; }
         public int ProductID { get; set; }
         public string AccountNumber { get; set; }
         public string product { get; set; }

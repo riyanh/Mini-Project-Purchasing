@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Purchasing.Entities.DTO
+#nullable disable
+
+namespace Purchasing.Entities.Models
 {
-    public class PurchaseOrderDto
+    public partial class VPurchaseOrder1
     {
-        public int PurchaseOrderID { get; set; }
         public int ProductID { get; set; }
+        public string AccountNumber { get; set; }
         public string product { get; set; }
         public int? OnOrderQty { get; set; }
         public string vendor { get; set; }

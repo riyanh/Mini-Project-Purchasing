@@ -11,6 +11,8 @@ namespace Purchasing.Contracts.Interfaces
     public interface IPurchaseOrderRepository
     {
         Task<IEnumerable<VPurchaseOrder>> GetAllPurchaseOrderAsync(bool trackChanges);
+        Task<VPurchaseOrder> GetPuchaseOrdersAsync(int purchaseOrderID, bool trackChanges);
         Task<IEnumerable<VPurchaseOrder>> GetSearchPurchaseOrderAsync(PurchaseOrderParameters purchaseOrderParameters, bool trackChanges);
+
     }
 }

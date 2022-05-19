@@ -41,6 +41,7 @@ namespace Purchasing.WebAPI
 
             //layer infrastructure
             services.ConfigureRepositoryManager();
+            services.ConfigureServiceAddCartManager();
 
             // call autoMapper config
             services.AddAutoMapper(typeof(Startup));

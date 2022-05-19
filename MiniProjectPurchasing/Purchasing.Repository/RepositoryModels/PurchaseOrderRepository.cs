@@ -20,6 +20,10 @@ namespace Purchasing.Repository.RepositoryModels
         public async Task<IEnumerable<VPurchaseOrder>> GetAllPurchaseOrderAsync(bool trackChanges) =>
             await FindAll(trackChanges).ToListAsync();
 
+        public async Task<VPurchaseOrder> GetPuchaseOrdersAsync(int purchaseOrderID, bool trackChanges) =>
+            await FindByCondition(c => c.PurchaseOrderID.Equals(purchaseOrderID), trackChanges)
+                .SingleOrDefaultAsync();
+
         public async Task<IEnumerable<VPurchaseOrder>> GetSearchPurchaseOrderAsync(PurchaseOrderParameters purchaseOrderParameters, bool trackChanges)
         {
             if (string.IsNullOrWhiteSpace(purchaseOrderParameters.SearchProduct))
@@ -31,7 +35,7 @@ namespace Purchasing.Repository.RepositoryModels
                 .Where(p => p.AccountNumber.ToLower().Contains(lowerCaseSearch) ||
                 p.vendor.ToLower().Contains(lowerCaseSearch) ||
                 p.product.ToLower().Contains(lowerCaseSearch))
-                .OrderBy(c => c.AccountNumber)
+                //.OrderBy(c => c.vendor)
                 .Skip((purchaseOrderParameters.PageNumber - 1) * purchaseOrderParameters.PageSize)
                 .Take(purchaseOrderParameters.PageSize)
                 .ToListAsync();

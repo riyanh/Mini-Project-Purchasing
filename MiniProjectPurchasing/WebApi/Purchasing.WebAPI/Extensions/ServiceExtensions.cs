@@ -44,5 +44,9 @@ namespace Purchasing.WebAPI.Extensions
         public static void ConfigureRepositoryManager(this IServiceCollection services) =>
             services.AddScoped<IRepositoryManager, RepositoryManager>();
 
+        //service
+        public static void ConfigureServiceAddCartManager(this IServiceCollection services) =>
+           services.AddScoped<IPurchaseOrderService, PurchaseOrderService>();
+
     }//endClassServiceExtensions
 }

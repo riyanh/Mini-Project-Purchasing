@@ -1,0 +1,28 @@
+2022-05-19 00:02:35.3900 ERROR AddToCart message : AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Boolean -> PurchaseOrderDetailDto
+System.Boolean -> Purchasing.Entities.DTO.PurchaseOrderDetailDto
+   at lambda_method93(Closure , Object , PurchaseOrderDetailDto , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 68
+2022-05-19 06:23:52.6578 ERROR AddToCart message : AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Boolean -> PurchaseOrderDetailDto
+System.Boolean -> Purchasing.Entities.DTO.PurchaseOrderDetailDto
+   at lambda_method93(Closure , Object , PurchaseOrderDetailDto , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 68
+2022-05-19 06:34:52.6422 ERROR AddToCart message : AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Boolean -> PurchaseOrderDetailDto
+System.Boolean -> Purchasing.Entities.DTO.PurchaseOrderDetailDto
+   at lambda_method30(Closure , Object , PurchaseOrderDetailDto , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 68
+2022-05-19 06:49:26.8753 ERROR AddToCart message : AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+PurchaseOrderDetail -> PurchaseOrderDetailDto
+Purchasing.Entities.Models.PurchaseOrderDetail -> Purchasing.Entities.DTO.PurchaseOrderDetailDto
+   at lambda_method30(Closure , Object , PurchaseOrderDetailDto , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 68

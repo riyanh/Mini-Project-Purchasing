@@ -1,0 +1,21 @@
+2022-05-18 22:50:16.7685 ERROR AddToCart message : AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> PurchaseOrderDetailDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[Purchasing.Entities.Models.PurchaseOrderDetail, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Purchasing.Repository.PurchaseOrderService+<AddToChart>d__2, Purchasing.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Purchasing.Entities.DTO.PurchaseOrderDetailDto
+   at lambda_method24(Closure , Object , PurchaseOrderDetailDto , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 69
+2022-05-18 22:52:16.0140 ERROR AddToCart message : AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> PurchaseOrderDetailDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[Purchasing.Entities.Models.PurchaseOrderDetail, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Purchasing.Repository.PurchaseOrderService+<AddToChart>d__2, Purchasing.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Purchasing.Entities.DTO.PurchaseOrderDetailDto
+   at lambda_method24(Closure , Object , PurchaseOrderDetailDto , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 69
+2022-05-18 22:54:22.4125 ERROR AddToCart message : AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> PurchaseOrderDetailDto
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[Purchasing.Entities.Models.PurchaseOrderDetail, Purchasing.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Purchasing.Repository.PurchaseOrderService+<AddToChart>d__2, Purchasing.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Purchasing.Entities.DTO.PurchaseOrderDetailDto
+   at lambda_method24(Closure , Object , PurchaseOrderDetailDto , ResolutionContext )
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 69

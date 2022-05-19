@@ -20,6 +20,7 @@ namespace Purchasing.Repository
         private ITotalDueMonth _totalDueMonth;
         private IListCartItemRepository _cartItemRepository;
         private IPurchaseOrderRepository _purchaseOrderRepository;
+        private IPOrderDetailRepository _orderDetailRepository;
 
         public RepositoryManager(AdventureWorks2019Context repositoryContext)
         {
@@ -107,6 +108,18 @@ namespace Purchasing.Repository
                     _purchaseOrderRepository = new PurchaseOrderRepository(_repositoryContext);
                 }
                 return _purchaseOrderRepository;
+            }
+        }
+
+        public IPOrderDetailRepository POrderDetail
+        {
+            get
+            {
+                if (_orderDetailRepository == null)
+                {
+                    _orderDetailRepository = new POrderDetailRepository(_repositoryContext);
+                }
+                return _orderDetailRepository;
             }
         }
 

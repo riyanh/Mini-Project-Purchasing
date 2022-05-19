@@ -17,6 +17,7 @@ namespace Purchasing.Contracts
         ITotalDueMonth TotalDueMonth { get; }
         IListCartItemRepository ListCartItem { get; }
         IPurchaseOrderRepository PurchaseOrder { get; }
+        IPOrderDetailRepository POrderDetail { get; }
 
         Task SaveAsync();
     }
