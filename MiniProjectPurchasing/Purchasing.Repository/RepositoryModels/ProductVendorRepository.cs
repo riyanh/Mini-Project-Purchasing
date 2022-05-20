@@ -10,16 +10,16 @@ using System.Threading.Tasks;
 
 namespace Purchasing.Repository.RepositoryModels
 {
-    public class ProductVendorRepository : RepositoryBase<ProductVendor>, IProductVendorRepository
+    public class ProductVendorRepository : RepositoryBase<vPurchaseOrderVendor>, IProductVendorRepository
     {
         public ProductVendorRepository(AdventureWorks2019Context repositoryContext) : base(repositoryContext)
         {
         }
 
-        public async Task<IEnumerable<ProductVendor>> GetAllProductVendorAsync(bool trackChanges) =>
+        public async Task<IEnumerable<vPurchaseOrderVendor>> GetAllProductVendorAsync(bool trackChanges) =>
            await FindAll(trackChanges).OrderBy(v => v.BusinessEntityID).ToListAsync();
 
-        public Task<ProductVendor> GetProductVendorAsync(int id, bool trackChanges)
+        public Task<vPurchaseOrderVendor> GetProductVendorAsync(int id, bool trackChanges)
         {
             throw new NotImplementedException();
         }

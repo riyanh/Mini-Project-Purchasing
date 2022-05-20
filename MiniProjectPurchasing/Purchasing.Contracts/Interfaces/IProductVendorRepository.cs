@@ -9,8 +9,8 @@ namespace Purchasing.Contracts.Interfaces
 {
     public interface IProductVendorRepository
     {
-        Task<IEnumerable<ProductVendor>> GetAllProductVendorAsync(bool trackChanges);
+        Task<IEnumerable<vPurchaseOrderVendor>> GetAllProductVendorAsync(bool trackChanges);
 
-        Task<ProductVendor> GetProductVendorAsync(int id, bool trackChanges);
+        Task<vPurchaseOrderVendor> GetProductVendorAsync(int id, bool trackChanges);
     }
 }

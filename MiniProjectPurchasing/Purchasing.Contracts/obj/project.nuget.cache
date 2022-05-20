@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SJ0EZDKYMFf6pk1c9wRyHpX1gpojtJzfKM1NEJ/tIcCn5ONvu0DLF7ci98KwHgO3DPCzZWsj3CYa0Btyy6lRsw==",
+  "dgSpecHash": "u/MPAnBkXQdP8n29z9Ao4D/sdpxnkUw/IBd0SFfjFSBkw6LCRmojSpHI4wp51yC6mhjAljvBZfprQlmkavskQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj",
+  "projectFilePath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vina\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Vina\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

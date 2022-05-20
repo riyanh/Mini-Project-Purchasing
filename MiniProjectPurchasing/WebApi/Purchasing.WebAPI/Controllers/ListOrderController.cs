@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Purchasing.Entities.DTO;
 using System;
+using Purchasing.Entities.RequesFeatures;
 
 namespace Purchasing.WebAPI.Controllers
 {
@@ -31,16 +32,23 @@ namespace Purchasing.WebAPI.Controllers
             {
                 var listorders = await _repository.ListOrder.GetAllListOrderAsync(trackChanges: false);
 
-                var purchaseOrderHeaderDto = _mapper.Map<IEnumerable<PurchaseOrderHeaderDto>>(listorders);
+                var listOrderDto = _mapper.Map<IEnumerable<vListPurchaseOrderDto>>(listorders);
 
-                return Ok(purchaseOrderHeaderDto);
+                return Ok(listOrderDto);
             }
             catch (Exception ex)
             {
                 _logger.LogError($"{nameof(GetListOrder)} message : {ex}");
                 return StatusCode(500, "Internal Server Error");
             }
-        }//EndMethodGetVendor
+        }
+        [HttpGet("pagination")]
+        public async Task<IActionResult> GetListOrderPagination([FromQuery] ListOrderParameters listOrderParameters)
+        {
+            var listOrderPage = await _repository.ListOrder.GetPaginationListOrderAsync(listOrderParameters, trackChanges: false);
+            var listOrderDto = _mapper.Map<IEnumerable<vListPurchaseOrderDto>>(listOrderPage);
+            return Ok(listOrderDto);
+        }//endMethodPagination
 
     }//endClassVendor
 }

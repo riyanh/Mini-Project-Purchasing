@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj": {}
+    "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj": {
+    "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
+        "projectUniqueName": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
         "projectName": "Purcashing.LoggerService",
-        "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
+        "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
         "packagesPath": "C:\\Users\\Vina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\obj\\",
+        "outputPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj"
+              "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
+                "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
+    "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj",
+        "projectUniqueName": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj",
         "projectName": "Purchasing.Contracts",
-        "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj",
+        "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj",
         "packagesPath": "C:\\Users\\Vina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\obj\\",
+        "outputPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,8 +92,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
-                "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj"
+              "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
+                "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj"
               }
             }
           }
@@ -126,14 +126,14 @@
         }
       }
     },
-    "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
+    "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
+        "projectUniqueName": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
         "projectName": "Purchasing.Entities",
-        "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
+        "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
         "packagesPath": "C:\\Users\\Vina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\obj\\",
+        "outputPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -202,14 +202,14 @@
         }
       }
     },
-    "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj": {
+    "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj",
+        "projectUniqueName": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj",
         "projectName": "Purchasing.Repository",
-        "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj",
+        "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj",
         "packagesPath": "C:\\Users\\Vina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Repository\\obj\\",
+        "outputPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +226,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj"
+              "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
+                "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj"
               },
-              "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
-                "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj"
+              "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
+                "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj"
               }
             }
           }
@@ -269,14 +269,14 @@
         }
       }
     },
-    "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj": {
+    "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj",
+        "projectUniqueName": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj",
         "projectName": "Purchasing.WebAPI",
-        "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj",
+        "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\Purchasing.WebAPI.csproj",
         "packagesPath": "C:\\Users\\Vina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\obj\\",
+        "outputPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\WebApi\\Purchasing.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -293,14 +293,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj": {
-                "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj"
+              "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj": {
+                "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj"
               },
-              "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
-                "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj"
+              "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj": {
+                "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj"
               },
-              "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj": {
-                "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj"
+              "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj": {
+                "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Repository\\Purchasing.Repository.csproj"
               }
             }
           }

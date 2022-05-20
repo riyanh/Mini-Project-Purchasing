@@ -31,7 +31,7 @@ namespace Purchasing.WebAPI.Controllers
             {
                 var productvendors = await _repository.ProductVendor.GetAllProductVendorAsync(trackChanges: false);
 
-                var productvendorsDto = _mapper.Map<IEnumerable<ProductVendorDto>>(productvendors);
+                var productvendorsDto = _mapper.Map<IEnumerable<vPurchaseOrderVendorDto>>(productvendors);
 
                 return Ok(productvendorsDto);
             }

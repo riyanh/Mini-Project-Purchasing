@@ -32,3 +32,20 @@ C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purcash
 C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.CoreCompileInputs.cache
 C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.CopyComplete
 C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\ref\Purcashing.LoggerService.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purcashing.LoggerService.deps.json
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purcashing.LoggerService.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purcashing.LoggerService.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Contracts.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Entities.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Contracts.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\bin\Debug\net5.0\Purchasing.Entities.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.AssemblyReference.cache
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.AssemblyInfoInputs.cache
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.AssemblyInfo.cs
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.CoreCompileInputs.cache
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.csproj.CopyComplete
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\refint\Purcashing.LoggerService.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\Purcashing.LoggerService.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purcashing.LoggerService\obj\Debug\net5.0\ref\Purcashing.LoggerService.dll

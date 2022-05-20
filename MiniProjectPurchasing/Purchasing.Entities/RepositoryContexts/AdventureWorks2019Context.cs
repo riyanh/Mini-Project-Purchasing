@@ -28,16 +28,18 @@ namespace Purchasing.Entities.RepositoryContexts
         public virtual DbSet<Vendor> Vendors { get; set; }
         public virtual DbSet<vVendorWithAddress> vVendorWithAddresses { get; set; }
         public virtual DbSet<vVendorWithContact> vVendorWithContacts { get; set; }
-        public virtual DbSet<vNewEditVendor> VNewEditVendors { get; set; }
+        public virtual DbSet<vCartPurchaseItemsVendor> vCartPurchaseItemsVendors { get; set; }
+        public virtual DbSet<vListPurchaseOrder> vListPurchaseOrders { get; set; }
+        public virtual DbSet<vPurchaseOrderVendor> vPurchaseOrderVendors { get; set; }
 
-      /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-0GRTEHQ\\SQLEXPRESS;Initial Catalog=AdventureWorks2019;Trusted_Connection=True");
-            }
-        }*/
+        /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+          {
+              if (!optionsBuilder.IsConfigured)
+              {
+  #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                  optionsBuilder.UseSqlServer("Data Source=DESKTOP-0GRTEHQ\\SQLEXPRESS;Initial Catalog=AdventureWorks2019;Trusted_Connection=True");
+              }
+          }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -580,10 +582,92 @@ namespace Purchasing.Entities.RepositoryContexts
 
                 entity.Property(e => e.Title).HasMaxLength(8);
             });
-
-            modelBuilder.Entity<vNewEditVendor>(entity =>
+            modelBuilder.Entity<vCartPurchaseItemsVendor>(entity =>
             {
+                entity.HasNoKey();
 
+                entity.ToView("vCartPurchaseItemsVendors", "Purchasing");
+
+                entity.Property(e => e.AccountNumber)
+                    .IsRequired()
+                    .HasMaxLength(15);
+
+                entity.Property(e => e.Freight).HasColumnType("money");
+
+                entity.Property(e => e.LineTotal).HasColumnType("money");
+
+                entity.Property(e => e.OrderDate).HasColumnType("datetime");
+
+                entity.Property(e => e.ProductName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.ShipBase).HasColumnType("money");
+
+                entity.Property(e => e.ShipDate).HasColumnType("datetime");
+
+                entity.Property(e => e.ShipName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.ShipRate).HasColumnType("money");
+
+                entity.Property(e => e.SubTotal).HasColumnType("money");
+
+                entity.Property(e => e.TaxAmt).HasColumnType("money");
+
+                entity.Property(e => e.TotalDue).HasColumnType("money");
+
+                entity.Property(e => e.UnitPrice).HasColumnType("money");
+
+                entity.Property(e => e.VendorName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<vListPurchaseOrder>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("vListPurchaseOrder", "Purchasing");
+
+                entity.Property(e => e.Freight).HasColumnType("money");
+
+                entity.Property(e => e.OrderDate).HasColumnType("datetime");
+
+                entity.Property(e => e.ShipDate).HasColumnType("datetime");
+
+                entity.Property(e => e.SubTotal).HasColumnType("money");
+
+                entity.Property(e => e.TaxAmt).HasColumnType("money");
+
+                entity.Property(e => e.TotalDue).HasColumnType("money");
+
+                entity.Property(e => e.VendorName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<vPurchaseOrderVendor>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("vPurchaseOrderVendor", "Purchasing");
+
+                entity.Property(e => e.ProductName)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.StandardPrice).HasColumnType("money");
+
+                entity.Property(e => e.UnitMeasureCode)
+                    .IsRequired()
+                    .HasMaxLength(3)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.VendorName)
+                    .IsRequired()
+                    .HasMaxLength(50);
             });
 
             OnModelCreatingPartial(modelBuilder);

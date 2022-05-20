@@ -32,3 +32,20 @@ C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purchas
 C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\refint\Purchasing.Repository.dll
 C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.pdb
 C:\Users\Vina\Source\Repos\Mini-Project-Purchasing\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\ref\Purchasing.Repository.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Repository.deps.json
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Repository.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Repository.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Contracts.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Entities.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Contracts.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\bin\Debug\net5.0\Purchasing.Entities.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.csproj.AssemblyReference.cache
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.AssemblyInfoInputs.cache
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.AssemblyInfo.cs
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.csproj.CoreCompileInputs.cache
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.csproj.CopyComplete
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\refint\Purchasing.Repository.dll
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\Purchasing.Repository.pdb
+D:\Code Academy\AdventureWorks\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\MiniProjectPurchasing\Purchasing.Repository\obj\Debug\net5.0\ref\Purchasing.Repository.dll

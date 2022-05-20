@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lTFdCfCtFAjX569yz8m7kJ/VD83KA/a2F0TQsotiM0Bblh8DPZJH6S/i/aG47tFHavD4DR8UKAwtONIhMnsqCg==",
+  "dgSpecHash": "iej02SqE6c2QfPSpnVcZyBBQ/5AOX3KMTxH/uHBNL/NHyF2LwOOoYIEZd4bn/0O7/PAQBxrYKqa0oUfwouCLHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
+  "projectFilePath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Entities\\Purchasing.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vina\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Vina\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
