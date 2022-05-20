@@ -20,9 +20,9 @@ namespace Purchasing.Repository.RepositoryModels
         public async Task<IEnumerable<VPurchaseOrder>> GetAllPurchaseOrderAsync(bool trackChanges) =>
             await FindAll(trackChanges).ToListAsync();
 
-        public async Task<VPurchaseOrder> GetPuchaseOrdersAsync(int purchaseOrderID, bool trackChanges) =>
-            await FindByCondition(c => c.PurchaseOrderID.Equals(purchaseOrderID), trackChanges)
-                .SingleOrDefaultAsync();
+        public async Task<VPurchaseOrder> GetPuchaseOrdersAsync(int productID, bool trackChanges) =>
+            await FindByCondition(c => c.ProductID.Equals(productID), trackChanges)
+                .FirstOrDefaultAsync();
 
         public async Task<IEnumerable<VPurchaseOrder>> GetSearchPurchaseOrderAsync(PurchaseOrderParameters purchaseOrderParameters, bool trackChanges)
         {

@@ -21,6 +21,7 @@ namespace Purchasing.Repository
         private IListCartItemRepository _cartItemRepository;
         private IPurchaseOrderRepository _purchaseOrderRepository;
         private IPOrderDetailRepository _orderDetailRepository;
+        private IPOrderHeaderRepository _orderHeaderRepository;
 
         public RepositoryManager(AdventureWorks2019Context repositoryContext)
         {
@@ -123,7 +124,24 @@ namespace Purchasing.Repository
             }
         }
 
+        public IPOrderHeaderRepository POrderHeader
+        {
+            get
+            {
+                if (_orderHeaderRepository == null)
+                {
+                    _orderHeaderRepository = new POrderHeaderRepository(_repositoryContext);
+                }
+                return _orderHeaderRepository;
+            }
+        }
+
+        public void Save()
+        {
+            _repositoryContext.SaveChanges();
+        }
+
         public async Task SaveAsync() =>
-            await _repositoryContext.SaveChangesAsync();
+           await _repositoryContext.SaveChangesAsync();
     }
 }

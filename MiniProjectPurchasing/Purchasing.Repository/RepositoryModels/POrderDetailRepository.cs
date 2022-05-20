@@ -30,9 +30,8 @@ namespace Purchasing.Repository.RepositoryModels
             await FindAll(trackChanges).OrderBy(o => o.PurchaseOrderDetailID)
                 .ToListAsync();
 
-        public async Task<PurchaseOrderDetail> GetPODetailsAsync(int purchaseOrderID, int productId, bool trackChanges) =>
-             await FindByCondition(c => c.PurchaseOrderDetailID.Equals(purchaseOrderID) && c.ProductID.Equals(productId)
-             , trackChanges).SingleOrDefaultAsync();
+        public async Task<PurchaseOrderDetail> GetPODetailsAsync(int productID, bool trackChanges) =>
+             await FindByCondition(c => c.ProductID.Equals(productID), trackChanges).FirstOrDefaultAsync();
 
         public void UpdatePOrderDetailsAsync(PurchaseOrderDetail purchaseOrderDetail)
         {

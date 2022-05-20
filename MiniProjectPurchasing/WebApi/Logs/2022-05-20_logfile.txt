@@ -1,0 +1,7 @@
+2022-05-20 17:12:57.9142 ERROR AddToCart message : System.InvalidOperationException: Sequence contains more than one element.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Purchasing.Repository.RepositoryModels.POrderHeaderRepository.GetPOHeaderAsync(Int32 employeeID, Boolean trackChanges) in D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\RepositoryModels\POrderHeaderRepository.cs:line 36
+   at Purchasing.Repository.PurchaseOrderService.AddToCart(Int32 employeeID, Int32 productID) in D:\MiniProjectC#\MiniProjectPurchasing\Purchasing.Repository\PurchaseOrderService.cs:line 54
+   at Purchasing.WebAPI.Controllers.PurchaseOrderController.AddToCart(AddToCartDto addToCartDto) in D:\MiniProjectC#\MiniProjectPurchasing\WebApi\Purchasing.WebAPI\Controllers\PurchaseOrderController.cs:line 62
+2022-05-20 20:00:26.7891 ERROR Add To Cart Purchase Order

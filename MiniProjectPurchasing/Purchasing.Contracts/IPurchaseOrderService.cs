@@ -10,7 +10,6 @@ namespace Purchasing.Contracts
 {
     public interface IPurchaseOrderService
     {
-        Task<PurchaseOrderDetail> AddToCart(int purchaseOrderDetailID, int productQty);
-        //Task<bool> AddToCart(PurchaseOrderDetailDto purchaseOrderDetailDto);
+        Task<bool> AddToCart(AddToCartDto addToCartDto);
     }
 }

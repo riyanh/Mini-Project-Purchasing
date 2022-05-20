@@ -37,6 +37,7 @@ namespace Purchasing.Entities.RepositoryContexts
         public virtual DbSet<VPurchaseOrder> VPurchaseOrders { get; set; }
 
 
+
         /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
           {
               if (!optionsBuilder.IsConfigured)

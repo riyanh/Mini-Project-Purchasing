@@ -18,6 +18,7 @@ namespace Purchasing.Contracts
         IListCartItemRepository ListCartItem { get; }
         IPurchaseOrderRepository PurchaseOrder { get; }
         IPOrderDetailRepository POrderDetail { get; }
+        IPOrderHeaderRepository POrderHeader { get; }
 
         Task SaveAsync();
     }

@@ -55,18 +55,17 @@ namespace Purchasing.WebAPI.Controllers
         }//endMethodSearch
 
         [HttpPost("AddToChart")]
-        public async Task<IActionResult> AddToCart([FromBody] PurchaseOrderDetailDto purchaseOrderDetailDto)
+        public async Task<IActionResult> AddToCart([FromBody] AddToCartDto addToCartDto)
         {
             try
             {
-                if(purchaseOrderDetailDto == null)
+                var addToCarts = await _service.AddToCart(addToCartDto);
+                if (!addToCarts)
                 {
-                    _logger.LogError("Purchase Order Detail to add purchase fail");
-                    BadRequest("Purchase Order Detail Object add purchase fail");
-                }
-                  var cartEntity = await _service.AddToCart(purchaseOrderDetailDto.PurchaseOrderID, purchaseOrderDetailDto.ProductID);
-                return Ok(_mapper.Map<PurchaseOrderDetailDto>(cartEntity));
-                //return NoContent();
+                    _logger.LogError("Add To Cart Purchase Order");
+                    BadRequest("Add To Cart Purchase Order");
+                } 
+                return NoContent();
             }
             catch (Exception ex)
             {

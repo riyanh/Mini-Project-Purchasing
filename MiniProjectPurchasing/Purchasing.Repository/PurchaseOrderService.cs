@@ -46,45 +46,58 @@ namespace Purchasing.Repository
             }
         }*/
 
-        public async Task<PurchaseOrderDetail> AddToCart(int purchaseOrderDetailID, int productQty)
+        public async Task<bool> AddToCart(AddToCartDto addToCartDto)
         {
-            VPurchaseOrder vPurchaseOrder = new VPurchaseOrder();
+            PurchaseOrderHeader purchaseOrderHeader = new PurchaseOrderHeader();
             PurchaseOrderDetail orderDetail = new PurchaseOrderDetail();
-            //vPurchaseOrder = await _repositoryManager.PurchaseOrder.GetAllPurchaseOrderAsync(trackChanges: true);
-            vPurchaseOrder = await _repositoryManager.PurchaseOrder.GetPuchaseOrdersAsync(purchaseOrderDetailID, trackChanges: true);
-            //orderDetail = await _repositoryManager.POrderDetail.GetPODetailsAsync(purchaseOrderDetailID, productQty, trackChanges: true);
+            VPurchaseOrder vPurchaseOrder = new VPurchaseOrder();
+
+            purchaseOrderHeader = await _repositoryManager.POrderHeader.GetPOHeaderAsync(addToCartDto.EmployeeID, trackChanges: true);
+            orderDetail = await _repositoryManager.POrderDetail.GetPODetailsAsync(addToCartDto.ProductID, trackChanges: true);
+            vPurchaseOrder = await _repositoryManager.PurchaseOrder.GetPuchaseOrdersAsync(addToCartDto.ProductID, trackChanges: true);
+
             try
             {
-                orderDetail = await _repositoryManager.POrderDetail.GetPODetailsAsync(vPurchaseOrder.PurchaseOrderID, productQty, trackChanges: true);
-                if (vPurchaseOrder == null)
+                if (purchaseOrderHeader.Status == 1)
                 {
-                    vPurchaseOrder = new VPurchaseOrder();
-         
-                    //orderDetail = await _repositoryManager.POrderDetail.GetPODetailsAsync(vPurchaseOrder.PurchaseOrderID, vPurchaseOrder.ProductID, trackChanges: true);
-                    orderDetail.PurchaseOrderID = vPurchaseOrder.PurchaseOrderID;
-                    orderDetail.ProductID = vPurchaseOrder.ProductID;
+                    orderDetail = new PurchaseOrderDetail();
+                    orderDetail.PurchaseOrderID = purchaseOrderHeader.PurchaseOrderID;
+                    orderDetail.ProductID = addToCartDto.ProductID;
+                    orderDetail.OrderQty += 1;
                     orderDetail.DueDate = DateTime.Now;
-                    orderDetail.OrderQty = 1;
-                    orderDetail.UnitPrice = vPurchaseOrder.UnitPrice;
-                    _repositoryManager.POrderDetail.CreatePOrderDetailsAsync(orderDetail);
-                   // _repositoryManager.SaveAsync();
+                    _repositoryManager.POrderDetail.UpdatePOrderDetailsAsync(orderDetail);
+                    await _repositoryManager.SaveAsync();
 
                 }
                 else
                 {
-                    //orderDetail = new PurchaseOrderDetail();
-                    orderDetail.PurchaseOrderID = vPurchaseOrder.PurchaseOrderID;
-                    orderDetail.ProductID = vPurchaseOrder.ProductID;
-                    orderDetail.OrderQty += 1;
-                    //_repositoryManager.SaveAsync();
+                    
+                    purchaseOrderHeader = new PurchaseOrderHeader();
+    
+                    purchaseOrderHeader.EmployeeID = addToCartDto.EmployeeID;
+                    purchaseOrderHeader.OrderDate = DateTime.Now;
+                    purchaseOrderHeader.Status = 1;
+                    purchaseOrderHeader.ShipMethodID = vPurchaseOrder.ShipMethodID;
+                    purchaseOrderHeader.VendorID = vPurchaseOrder.BusinessEntityID;
+                    _repositoryManager.POrderHeader.CreatePOrderHeaderAsync(purchaseOrderHeader);
+                    await _repositoryManager.SaveAsync();
+
+
+                    orderDetail = new PurchaseOrderDetail();
+                    orderDetail.PurchaseOrderID = purchaseOrderHeader.PurchaseOrderID;
+                    orderDetail.ProductID = addToCartDto.ProductID;
+                    orderDetail.OrderQty = 1;
+                    orderDetail.DueDate = DateTime.Now;
+                    _repositoryManager.POrderDetail.CreatePOrderDetailsAsync(orderDetail);
+                    await _repositoryManager.SaveAsync();
 
                 }
-                return orderDetail;
+                return true;
             }
             catch (Exception ex)
             {
                 //return ex.Message();
-                throw;
+                return false;
             }
 
         }

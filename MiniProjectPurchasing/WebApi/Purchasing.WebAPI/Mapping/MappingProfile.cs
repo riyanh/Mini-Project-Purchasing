@@ -15,11 +15,11 @@ namespace Purchasing.WebAPI.Mapping
             CreateMap<VStatusTotalOrder, StatusOrderDto>();
             CreateMap<VTotalDueMonth, TotalDueMonthDto>();
             CreateMap<VCartItem, ListCartItemDto>();
-            CreateMap<VPurchaseOrder, PurchaseOrderDto>();
+            CreateMap<VPurchaseOrder1, PurchaseOrderDto>();
 
             //post 
             CreateMap<VendorDto, VListVendor>().ReverseMap();
-            CreateMap<PurchaseOrderDetailDto, PurchaseOrderDetail>().ReverseMap();
+           // CreateMap<AddToCartDto, PurchaseOrderDetail>().ReverseMap();
             //CreateMap<ProductReceiptDto, VProductReceipt>().ReverseMap();
         }
     }
