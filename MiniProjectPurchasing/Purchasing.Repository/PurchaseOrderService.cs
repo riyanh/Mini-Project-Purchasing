@@ -65,6 +65,7 @@ namespace Purchasing.Repository
                     orderDetail.ProductID = addToCartDto.ProductID;
                     orderDetail.OrderQty += 1;
                     orderDetail.DueDate = DateTime.Now;
+                    orderDetail.UnitPrice = vPurchaseOrder.UnitPrice;
                     _repositoryManager.POrderDetail.UpdatePOrderDetailsAsync(orderDetail);
                     await _repositoryManager.SaveAsync();
 
@@ -88,6 +89,7 @@ namespace Purchasing.Repository
                     orderDetail.ProductID = addToCartDto.ProductID;
                     orderDetail.OrderQty = 1;
                     orderDetail.DueDate = DateTime.Now;
+                    orderDetail.UnitPrice = vPurchaseOrder.UnitPrice;
                     _repositoryManager.POrderDetail.CreatePOrderDetailsAsync(orderDetail);
                     await _repositoryManager.SaveAsync();
 
