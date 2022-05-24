@@ -5826,11 +5826,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
+      "projectUniqueName": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
       "projectName": "Purcashing.LoggerService",
-      "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
+      "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\Purcashing.LoggerService.csproj",
       "packagesPath": "C:\\Users\\Vina\\.nuget\\packages\\",
-      "outputPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purcashing.LoggerService\\obj\\",
+      "outputPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purcashing.LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5847,8 +5847,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
-              "projectPath": "D:\\Code Academy\\AdventureWorks\\Mini-Project-Purchasing-adec9336e47d0826b5bc6f0956e98dc447046a22\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj"
+            "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Vina\\Source\\Repos\\Mini-Project-Purchasing\\MiniProjectPurchasing\\Purchasing.Contracts\\Purchasing.Contracts.csproj"
             }
           }
         }

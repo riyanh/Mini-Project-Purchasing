@@ -13,7 +13,11 @@ namespace Purchasing.Contracts
         IVendorRepository Vendor { get; }
         IProductVendorRepository ProductVendor { get; }
         IListOrderRepository ListOrder { get; }
-
+        IBusinessEntityRepository BusinessEntity { get; }
+        IProductRepository Product { get; }
+        IShipMethodRepository ShipMethod { get; }
+        IProductVendorHRepository ProductVendorH { get; }
+        
         Task SaveAsync();
     }
 }

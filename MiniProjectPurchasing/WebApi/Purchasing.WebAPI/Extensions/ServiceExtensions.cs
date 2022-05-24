@@ -43,6 +43,8 @@ namespace Purchasing.WebAPI.Extensions
         //configure repository
         public static void ConfigureRepositoryManager(this IServiceCollection services) =>
             services.AddScoped<IRepositoryManager, RepositoryManager>();
+        public static void ConfigureServiceVendor(this IServiceCollection services) =>
+            services.AddScoped<IServiceVendor, ServiceVendor>();
 
     }//endClassServiceExtensions
 }

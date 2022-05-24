@@ -11,19 +11,21 @@ using Purchasing.Entities.Models;
 
 namespace Purchasing.WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/purchasing/vendor")]
     [ApiController]
     public class VendorController : ControllerBase
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
+        private readonly IServiceVendor _serviceVendor;
 
-        public VendorController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        public VendorController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, IServiceVendor serviceVendor)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
+            _serviceVendor = serviceVendor;
         }
 
         [HttpGet]
@@ -44,7 +46,7 @@ namespace Purchasing.WebAPI.Controllers
             }
         }
         [HttpGet("{id}", Name = "BusinessEntityd")]
-        public async Task<IActionResult> GetVendorr(int id)
+        public async Task<IActionResult> GetVendor(int id)
         {
             var vendor = await _repository.Vendor.GetVendorAsync(id, false);
             if (vendor == null)
@@ -59,40 +61,22 @@ namespace Purchasing.WebAPI.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> PostVendor([FromBody] VendorDto vendorDto)
+        public async Task<IActionResult> PostVendor([FromBody] ProductVendorDto productVendorDto)
         {
-            if (vendorDto == null)
+            if (productVendorDto == null)
             {
-                _logger.LogError("Vendor is null");
-                return BadRequest("Vendor is null");
+                _logger.LogError("Profile Data is null");
+                return BadRequest("Profile Data is null");
             }
-
-            //object model state digunakan untuk validasi data yang ditangkap customerDto
+            //Object modelState digunakan untuk validasi data yang ditangkap oleh customerdto
             if (!ModelState.IsValid)
             {
-                _logger.LogError("Invalid modelstate vendorDto");
+                _logger.LogError("Invalid modelstate Dto");
                 return UnprocessableEntity(ModelState);
             }
-            var vendorEntity = _mapper.Map<Vendor>(vendorDto);
-            _repository.Vendor.CreateVendorAsync(vendorEntity);
-            await _repository.SaveAsync();
-
-            var vendorResult = _mapper.Map<VendorDto>(vendorEntity);
-            return CreatedAtRoute("CustomerById", new { id = vendorResult.BusinessEntityID }, vendorResult);
-        }
-        [HttpDelete]
-        public async Task<IActionResult> DeleteVendor(int id)
-        {
-            var vendor = await _repository.Vendor.GetVendorAsync(id, trackChanges: false);
-            if (vendor == null)
-            {
-                _logger.LogInfo($"Vendor with id : {id} doesn't exist in database");
-                return NotFound();
-            }
-
-            _repository.Vendor.DeleteVendorAsync(vendor);
-            await _repository.SaveAsync();
-            return NoContent();
+            var postVendor = await _serviceVendor.NewVendor(productVendorDto);
+            //await _repository.SaveAsync();
+            return Ok();
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateVendor(int id, [FromBody] VendorDto vendorDto)

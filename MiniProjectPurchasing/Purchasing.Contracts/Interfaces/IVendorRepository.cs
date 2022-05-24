@@ -14,7 +14,6 @@ namespace Purchasing.Contracts.Interfaces
 
         Task<Vendor> GetVendorAsync(int id, bool trackChanges);
         void CreateVendorAsync(Vendor vendor);
-
         void DeleteVendorAsync(Vendor vendor);
         void UpdateVendorasync(Vendor vendor);
     }

@@ -8,20 +8,19 @@ namespace Purchasing.WebAPI.Mapping
     {
         public MappingProfile()
         {
-            //get 
-            CreateMap<Vendor, VendorDto>();
-
-            //post 
+            CreateMap<Vendor, VendorDto>(); 
             CreateMap<VendorDto, Vendor>().ReverseMap();
-
             CreateMap<vPurchaseOrderVendor, vPurchaseOrderVendorDto>();
-
-            //post 
             CreateMap<vPurchaseOrderVendorDto, vPurchaseOrderVendor>().ReverseMap();
             CreateMap<vListPurchaseOrder, vListPurchaseOrderDto>();
-
-            //post 
             CreateMap<vListPurchaseOrderDto, vListPurchaseOrder>().ReverseMap();
+            CreateMap<BusinessEntity, BusinessEntityDto>();
+            CreateMap<BusinessEntityDto, BusinessEntityDto>().ReverseMap();
+            CreateMap<Product, ProductDto>();
+            CreateMap<ShipMethod, ShipMethodDto>();
+            CreateMap<ProductVendor, ProductVendorDto>();
+            CreateMap<ProductVendorDto, ProductVendor>().ReverseMap();
+            
         }
     }
 }

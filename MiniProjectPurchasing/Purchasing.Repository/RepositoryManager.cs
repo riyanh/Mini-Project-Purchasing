@@ -16,6 +16,11 @@ namespace Purchasing.Repository
         private IVendorRepository _vendorRepository;
         private IProductVendorRepository _productVendorRepository;
         private IListOrderRepository _listOrderRepository;
+        private IBusinessEntityRepository _businessEntityRepository;
+        private IProductRepository _productRepository;
+        private IProductVendorHRepository _productVendorHRepository;
+        private IUnitMeasureRepository _unitMeasureRepository;
+        private IShipMethodRepository _shipMethodRepository;
 
         public RepositoryManager(AdventureWorks2019Context repositoryContext)
         {
@@ -54,6 +59,51 @@ namespace Purchasing.Repository
                     _listOrderRepository = new ListOrderRepository(_repositoryContext);
                 }
                 return _listOrderRepository;
+            }
+        }
+
+        public IBusinessEntityRepository BusinessEntity
+        {
+            get
+            {
+                if (_businessEntityRepository == null)
+                {
+                    _businessEntityRepository = new BusinessEntityRepository(_repositoryContext);
+                }
+                return _businessEntityRepository;
+            }
+        }
+        public IProductRepository Product
+        {
+            get
+            {
+                if (_productRepository == null)
+                {
+                    _productRepository = new ProductRepository(_repositoryContext);
+                }
+                return _productRepository;
+            }
+        }
+        public IShipMethodRepository ShipMethod
+        {
+            get
+            {
+                if(_shipMethodRepository == null)
+                {
+                    _shipMethodRepository = new ShipMethodRepository(_repositoryContext);
+                }
+                return (_shipMethodRepository);
+            }
+        }
+        public IProductVendorHRepository ProductVendorH
+        {
+            get
+            {
+                if (_productVendorHRepository == null)
+                {
+                    _productVendorHRepository = new ProductVendorHRepository(_repositoryContext);
+                }
+                return _productVendorHRepository;
             }
         }
 
